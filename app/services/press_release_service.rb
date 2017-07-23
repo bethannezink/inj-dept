@@ -1,0 +1,3 @@
+class PressReleaseService
+
+end
