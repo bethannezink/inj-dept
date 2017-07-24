@@ -6,7 +6,12 @@ class PressRelease
     @teaser = params["teaser"]
     @body = params["body"]
     @url = params["url"]
-    @date = params["date"]
+    @date = format_date(params["date"])
   end
-  
+
+  def format_date(date)
+    date = DateTime.strptime(date, '%s')
+    date.strftime('%m/%d/%Y')
+  end
+
 end
