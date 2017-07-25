@@ -10,8 +10,7 @@ class PressRelease
   end
 
   def format_date(date)
-    date = DateTime.strptime(date, '%s')
-    date.strftime('%m/%d/%Y')
+    DateTime.strptime(date, '%s').strftime('%m/%d/%Y') if date
   end
 
 end
