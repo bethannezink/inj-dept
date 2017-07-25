@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 # HTTParty
 gem 'httparty', '~> 0.13.7'
 
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -37,6 +38,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails'
 end
 
 group :development do
