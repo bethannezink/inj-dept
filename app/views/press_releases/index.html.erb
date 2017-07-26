@@ -1,6 +1,6 @@
-<h1>PressReleases#index</h1>
-<% @press_releases.each do |press_release| %>
-<ul>
-  <li><%= press_release.date %></li>
-</ul>
+<h1>Dept of Justice Press Releases</h1>
+<ul><% @press_releases.each do |press_release| %>
+  <li><%= press_release.date %><%= link_to press_release.title, press_release.url %></li>
+  <%= press_release.teaser if press_release.teaser.present? %>
 <% end %>
+</ul>
