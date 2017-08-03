@@ -20,6 +20,9 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 # HTTParty
 gem 'httparty', '~> 0.13.7'
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'autoprefixer-rails'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
